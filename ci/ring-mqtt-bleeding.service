@@ -1,0 +1,10 @@
+[Unit]
+Description=Sync + multi-arch build/deploy of ring-mqtt bleeding add-on
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/var/home/hellings/Documents/ring-mqtt-ha-addon-bleeding
+ExecStart=/usr/bin/just ci
+# Cross-arch qemu builds take a while
+TimeoutStartSec=infinity

@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily ring-mqtt bleeding add-on build/deploy
+
+[Timer]
+OnCalendar=*-*-* 04:00:00
+Persistent=true
+RandomizedDelaySec=15m
+
+[Install]
+WantedBy=timers.target
