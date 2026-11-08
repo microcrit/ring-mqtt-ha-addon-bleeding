@@ -1,0 +1,13 @@
+diff --git a/Dockerfile b/Dockerfile
+index e970c74..b161e61 100644
+--- a/Dockerfile
++++ b/Dockerfile
+@@ -25,7 +25,7 @@ COPY --from=gobuilder /out/ringstream /app/ring-mqtt/ringstream/ringstream
+ RUN S6_VERSION="v3.2.3.2" && \
+     BASHIO_VERSION="v0.19.0" && \
+     APK_ARCH="$(apk --print-arch)" && \
+-    apk add --no-cache tar xz git bash curl tzdata && \
++    apk add --no-cache tar xz git bash curl jq tzdata && \
+     curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/${S6_VERSION}/s6-overlay-noarch.tar.xz" | tar -Jxpf - -C / && \
+     case "${APK_ARCH}" in \
+         aarch64|x86_64) \

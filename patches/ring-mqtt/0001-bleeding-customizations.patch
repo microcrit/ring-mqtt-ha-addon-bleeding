@@ -1,0 +1,22 @@
+diff --git a/ring-mqtt/config.yaml b/ring-mqtt/config.yaml
+index 9a64b292cc75f03d9d529b8bc20e52e3e4cdc87b..08a9209b1ee8e153f1eb47778fb52660f8de5d71 100644
+--- a/ring-mqtt/config.yaml
++++ b/ring-mqtt/config.yaml
+@@ -1,4 +1,4 @@
+-name: Ring-MQTT with Video Streaming
++name: Ring-MQTT with Video Streaming [Git]
+ version: 5.9.3
+ slug: ring_mqtt
+ description: Integrate Ring Devices into Home Assistant via MQTT and RTSP
+@@ -7,10 +7,8 @@
+ arch:
+   - aarch64
+   - amd64
+-  - armhf
+-  - armv7
+ url: 'https://github.com/tsightler/ring-mqtt-ha-addon'
+-image: 'tsightler/ring-mqtt'
++image: 'shellings/ring-mqtt-bleeding'
+ webui: 'http://[HOST]:[PORT:55123]/'
+ ingress: true
+ ingress_port: 55123
