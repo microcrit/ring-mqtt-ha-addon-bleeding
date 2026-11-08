@@ -1,5 +1,5 @@
 name: Ring-MQTT with Video Streaming [Git]
-version: 5.9.3-git-59aab41b4afd1692148b1180a6b0920591c86db1
+version: 6.0.0-git-49b3466bc0e35abcbaec4404f23ab3463cf11097
 slug: ring_mqtt
 description: Integrate Ring Devices into Home Assistant via MQTT and RTSP
 startup: application
