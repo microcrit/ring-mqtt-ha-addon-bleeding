@@ -1,4 +1,4 @@
-name: go2rtc-hevc-fix [Git]
+name: go2rtc-hevc-fix [Git Prebuilt]
 description: >-
   A drop-in replacement for the official go2rtc add-on that de-aggregates
   RFC 7798 HEVC packets, so HEVC cameras served through an ffmpeg-wrapped RTSP
