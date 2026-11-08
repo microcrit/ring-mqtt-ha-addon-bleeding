@@ -1,0 +1,3 @@
+[submodule "ring-mqtt-src"]
+	path = ring-mqtt-src
+	url = https://github.com/tsightler/ring-mqtt
